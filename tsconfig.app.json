@@ -22,12 +22,20 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
 
+    /* Type checking */
+    "typeRoots": [
+      "node_modules/@types",
+      "@types"
+    ],
+
     /* Paths */
     "baseUrl": "./src",
     "paths": {
       "@components/*": ["components/*"],
       "@data/*": ["data/*"],
       "@router/*": ["router/*"],
+      "@scss/*": ["assets/scss/*"],
+      "@types/*": ["types/*"],
     }
   },
 
