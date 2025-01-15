@@ -1,0 +1,18 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* reset body elemet */
+body {
+  background: #121212;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}

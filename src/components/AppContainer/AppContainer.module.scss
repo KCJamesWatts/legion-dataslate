@@ -1,0 +1,9 @@
+@use "../../assets/scss/variables.scss" as var;
+
+.appContainer {
+    color: var.$text-color;
+    background: var.$surface-color;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}

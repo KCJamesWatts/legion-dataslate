@@ -1,17 +1,17 @@
-// import React, { lazy, Suspense } from 'react';
+import { lazy, Suspense } from 'react';
 import { Route, BrowserRouter, Routes } from 'react-router';
 
-// const Dashboard = lazy(() => import ('@components/Dashboard'));
+const AppContainer = lazy(() => import ('@components/AppContainer'));
 
 const Router = () => {
     return <BrowserRouter>
-        {/* <Suspense fallback={<div>Loading...</div>}> */}
+        <Suspense fallback={<div>Loading...</div>}>
             <Routes>
-                <Route index element={<div>Dashboard</div>}>
+                <Route index element={<AppContainer />}>
                 
                 </Route>
             </Routes>
-        {/* </Suspense> */}
+        </Suspense>
     </BrowserRouter>
 }
 
