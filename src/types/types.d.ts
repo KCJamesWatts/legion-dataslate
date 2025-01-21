@@ -14,19 +14,25 @@ enum UnitType {
     infantry = 'Infantry',
 }
 
+interface SpecialRule {
+    name: SpecialRules;
+    value?: number | string;
+}
+
 interface UnitDatasheet {
     id: number;
-    faction: Faction | null;
     army: Army;
+    caf: number;
+    faction: Faction | null;
+    morale: number | null;
+    movement: string;
     name: string;
+    save: number;
+    specialRules: SpecialRule[];
     unitType: {
         type: UnitType;
         value: number;
     };
-    movement: string;
-    save: number;
-    caf: number;
-    morale: number | null;
     wounds: number;
     weapons: number[];
 }

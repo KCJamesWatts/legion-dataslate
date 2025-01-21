@@ -1,0 +1,27 @@
+@use "sass:color";
+
+$surface-color: #121212;
+$primary-color: #607D8B;
+$primary-light-color: #CFD8DC;
+$primary-dark-color: #455A64;
+$accent-color: #03A9F4;
+$error-color: #CF6679;
+
+$text-color: #FFFFFF;
+$text-primary-color: #212121;
+$text-secondary-color: #757575;
+
+$divider-color: #BDBDBD;
+
+$alternate-row-color: color.adjust($primary-light-color, $lightness: 2%);
+
+$dp00: $surface-color;
+$dp01: color.adjust($surface-color, $lightness: 5%);
+$dp02: color.adjust($surface-color, $lightness: 7%);
+$dp03: color.adjust($surface-color, $lightness: 8%);
+$dp04: color.adjust($surface-color, $lightness: 9%);
+$dp06: color.adjust($surface-color, $lightness: 11%);
+$dp08: color.adjust($surface-color, $lightness: 12%);
+$dp12: color.adjust($surface-color, $lightness: 14%);
+$dp16: color.adjust($surface-color, $lightness: 15%);
+$dp24: color.adjust($surface-color, $lightness: 16%);

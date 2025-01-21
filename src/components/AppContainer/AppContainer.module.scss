@@ -1,9 +1,11 @@
-@use "../../assets/scss/variables.scss" as var;
+@use "../../assets/scss/colors.scss" as col;
 
 .appContainer {
-    color: var.$text-color;
-    background: var.$surface-color;
+    color: col.$text-color;
+    background: col.$surface-color;
+    box-sizing: border-box;
     height: 100%;
     margin: 0;
+    padding: 1em;
     width: 100%;
 }
